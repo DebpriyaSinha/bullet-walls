@@ -30,15 +30,7 @@
   function draw() {
   background(255,255,255);
 
-  //if(wall.x-bullet.x<(bullet.width + wall.width)/2)
-//{
-  //hasCollided();
-//}
-  
-  drawSprites();
-  }
-
- if(hasCollided(bullet, wall)) 
+  if(hasCollided(bullet, wall)) 
   {
     bullet.velocityX=0;
     var damage =0.5*weight*speed*speed/(thickness*thickness*thickness) ;
@@ -55,3 +47,8 @@
     }
     
   } 
+  
+  drawSprites();
+  }
+
+ 
